@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+
+
+    <script>
+//Boy ve Kilo değerlerini alıp vucüt kütle endeksini bulup,
+//ideal aralık dışındki değerler için "ideal kilo değil",ideal aralıkta ise "ideal kilo " mesajı veren programı yazınız.
+//not: Vucut kütle endeksi = kilo/boy^2
+//ideal aralık : 18.5-25
+
+const Boy = prompt("Lütfen boy ölçünüzü giriniz");
+const Kilo =prompt("Lütfen kilonuzu giriniz");
+
+const vki = Kilo/Boy**2;
+console.log("vki",vki);
+
+if (vki>18.5 && vki<25) alert("ideal kilo");
+
+else alert("ideal kilo değil");
+
+
+
+
+
+    </script>
+</body>
+</html>

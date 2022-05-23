@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        .mavi{color: blue;}
+        .bg-pembe{
+            background-color: pink ;
+        }
+
+        .yaziTİpi{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+        
+        }
+    </style>
+</head>
+<body>
+    <div id= "yazi" class = "mavi bg-pembe">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, laboriosam sunt. Cumque ipsa perspiciatis aspernatur magnam magni in architecto voluptatibus ex natus repudiandae, asperiores distinctio, atque voluptatem molestias maxime adipisci.
+    </div>
+    
+    <script>
+
+ const elYazi = document.querySelector("#yazi");
+ elYazi.classList.add(".yaziTİpi");
+ console.log(elYazi.classList);
+
+ //dom un classlist özelliği bize class listini veriyor. add ve rmove yapabiliriz.
+
+
+    </script>
+</body>
+</html>

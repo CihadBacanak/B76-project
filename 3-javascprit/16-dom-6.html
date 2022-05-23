@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id= "txtAd" oninput="sayHello()"> 
+    <input type="button" id= "btnGonder" value="Gönder" onclick="sayHello()"> 
+
+
+    <h4 id="baslik">  </h4>
+
+
+    <script>
+function sayHello(){
+    const elAd = document.querySelector("#txtAd");
+    const elBaslik = document.querySelector("#baslik");
+
+    elBaslik.innerText = elAd.value;
+}
+
+
+
+
+
+
+//Butona Click olduğunda çaışacak şekilde ayarlama ypmış olduk.
+//Butona tıkladığımızda sonuç almak istediğimiz için komutları da buttonun olduğu yere yazdık.
+//<input type="button" id= "btnGonder" value="Gönder" onclick="sayHello()"> 
+
+
+//ama biz eğer text kutusuna yazarken aşağıda eş zamanlı yazı çıksın istiyorsak (Google arama motoruna yazdığımız gibi)
+//işte tam bu noktada    <input type="text" id= "txtAd" value="">    buraya oninput ="SayHello"  şeklinde yazmalıyız.
+
+//<input type="text" id= "txtAd" oninput="sayHello"> 
+
+</script>
+    
+</body>
+</html>

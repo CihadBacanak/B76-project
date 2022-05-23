@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h4 id="baslik"> 
+    <a href="#" >Google a git</a>
+
+</h4>
+
+    <script>
+const ellink =document.querySelector("#baslik a");
+//ellink.innerHTML=`<em> Google</em>`;
+ellink.innerHTML = `<em> ${ellink.innerText}</em>`;
+
+
+//<em> tagı metni eğik italik yapar.
+  //ineerText ile  seçim yaptığınızda ,seçim alanını bir text olarak alır 
+//ineerHTML ile eçim yaptığınızda ,seçim alanını bir dinamik yapı  olarak alır 
+//innerText ve innerHTML ; html elemanlari içindeki yazıyı yada html yi alıyor.
+
+
+    </script>
+</body>
+</html>
